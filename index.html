@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Private API integration for TheGeekPixel to manage products and orders via Etsy API." />
+  <title>TheGeekPixel API Integration</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-800 antialiased">
+
+  <!-- Container -->
+  <div class="min-h-screen flex flex-col items-center justify-center p-6">
+    <!-- Logo -->
+    <img src="logo.svg" alt="TheGeekPixel Logo" class="w-24 h-24 mb-6" />
+
+    <!-- Title -->
+    <h1 class="text-3xl font-bold text-gray-900 mb-2">TheGeekPixel API Integration</h1>
+    <p class="text-gray-600 text-lg mb-8 text-center max-w-xl">
+      This private backend app is currently in development. Its purpose is to manage products and orders for my own Etsy shop (<strong>TheGeekPixel</strong>), using Etsy’s API in full compliance with their policies.
+    </p>
+
+    <!-- Features -->
+    <div class="bg-white rounded-xl shadow-lg p-6 w-full max-w-2xl">
+      <h2 class="text-xl font-semibold text-gray-800 mb-4">Planned Features</h2>
+      <ul class="list-disc pl-6 space-y-2 text-gray-700">
+        <li><strong>Product Creation:</strong> Create and manage products from my backend, choose where to publish (Etsy, TikTok Shop, personal website), and sync data.</li>
+        <li><strong>Order Management:</strong> Receive Etsy orders in my backend, register them in the database, and request external APIs if needed for fulfillment.</li>
+        <li><strong>Transactional Emails:</strong> Send confirmation or order status updates <em>only if Etsy policies allow</em>.</li>
+      </ul>
+    </div>
+
+    <!-- Support Thread -->
+    <p class="mt-8 text-gray-600 text-sm text-center">
+      This use case was confirmed as valid by Etsy Developers support.  
+      <span class="block">Support thread: <strong>#20796202</strong></span>
+    </p>
+
+    <!-- Footer -->
+    <footer class="mt-10 text-gray-400 text-sm text-center">
+      &copy; 2025 TheGeekPixel. All rights reserved.
+    </footer>
+  </div>
+</body>
+</html>
