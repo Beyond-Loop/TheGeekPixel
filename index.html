@@ -3,43 +3,127 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Private API integration for TheGeekPixel to manage products and orders via Etsy API." />
-  <title>TheGeekPixel API Integration</title>
-  <script src="https://cdn.tailwindcss.com"></script>
+  <meta name="description" content="TheGeekPixel - Private backend app to manage products and orders for my own Etsy shop.">
+  <title>TheGeekPixel - API Integration</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap">
+  <style>
+    /* Reset básico */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #f9f9f9;
+      color: #222;
+      line-height: 1.6;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem 1rem;
+      background-color: #fff;
+      border-bottom: 1px solid #eaeaea;
+    }
+
+    header img {
+      height: 60px;
+    }
+
+    main {
+      max-width: 700px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      color: #111;
+    }
+
+    p {
+      font-size: 1.1rem;
+      color: #555;
+      margin-bottom: 2rem;
+    }
+
+    section.features {
+      background-color: #fff;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
+      text-align: left;
+    }
+
+    section.features h2 {
+      font-size: 1.4rem;
+      margin-bottom: 1rem;
+      color: #111;
+    }
+
+    section.features ul {
+      list-style: none;
+    }
+
+    section.features li {
+      margin-bottom: 1rem;
+      padding-left: 1.5rem;
+      position: relative;
+      font-size: 1rem;
+    }
+
+    section.features li::before {
+      content: "•";
+      position: absolute;
+      left: 0;
+      color: #ff6600;
+      font-size: 1.2rem;
+      line-height: 1;
+    }
+
+    footer {
+      margin-top: auto;
+      padding: 1.5rem;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #888;
+      background-color: #fff;
+      border-top: 1px solid #eaeaea;
+    }
+  </style>
 </head>
-<body class="bg-gray-50 text-gray-800 antialiased">
+<body>
+  <header>
+    <img src="logo.svg" alt="TheGeekPixel Logo">
+  </header>
 
-  <!-- Container -->
-  <div class="min-h-screen flex flex-col items-center justify-center p-6">
-    <!-- Logo -->
-    <img src="logo.svg" alt="TheGeekPixel Logo" class="w-24 h-24 mb-6" />
-
-    <!-- Title -->
-    <h1 class="text-3xl font-bold text-gray-900 mb-2">TheGeekPixel API Integration</h1>
-    <p class="text-gray-600 text-lg mb-8 text-center max-w-xl">
-      This private backend app is currently in development. Its purpose is to manage products and orders for my own Etsy shop (<strong>TheGeekPixel</strong>), using Etsy’s API in full compliance with their policies.
+  <main>
+    <h1>TheGeekPixel API Integration</h1>
+    <p>
+      This private backend application is designed to simplify product and order management for my own Etsy shop.
     </p>
 
-    <!-- Features -->
-    <div class="bg-white rounded-xl shadow-lg p-6 w-full max-w-2xl">
-      <h2 class="text-xl font-semibold text-gray-800 mb-4">Planned Features</h2>
-      <ul class="list-disc pl-6 space-y-2 text-gray-700">
-        <li><strong>Product Creation:</strong> Create and manage products from my backend, choose where to publish (Etsy, TikTok Shop, personal website), and sync data.</li>
+    <section class="features">
+      <h2>Features</h2>
+      <ul>
+        <li><strong>Product Creation:</strong> Create and manage products in my backend, select where to publish them (Etsy, TikTok Shop, personal website), and synchronize data seamlessly.</li>
         <li><strong>Order Management:</strong> Receive Etsy orders in my backend, register them in the database, and request external APIs if needed for fulfillment.</li>
-        <li><strong>Transactional Emails:</strong> Send confirmation or order status updates <em>only if Etsy policies allow</em>.</li>
       </ul>
-    </div>
+    </section>
+  </main>
 
-    <!-- Support Thread -->
-    <p class="mt-8 text-gray-600 text-sm text-center">
-      This use case was confirmed as valid by Etsy Developers support.  
-      <span class="block">Support thread: <strong>#20796202</strong></span>
-    </p>
-
-    <!-- Footer -->
-    <footer class="mt-10 text-gray-400 text-sm text-center">
-      &copy; 2025 TheGeekPixel. All rights reserved.
-    </footer>
-  </div>
+  <footer>
+    © 2025 TheGeekPixel. All rights reserved.
+  </footer>
 </body>
 </html>
